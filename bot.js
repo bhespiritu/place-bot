@@ -19,9 +19,9 @@ client.on('message', msg => {
 	{
 		var x = parseFloat(args[0]);
 		var y = parseFloat(args[1]);
-		var r = 255 - parseInt(args[2]);
-		var g = 255 - parseInt(args[3]);
-		var b = 255 - parseInt(args[4]);
+		var r = parseInt(args[2]);
+		var g = parseInt(args[3]);
+		var b = parseInt(args[4]);
 		if(x != NaN && y != NaN && r != NaN && g != NaN && b != NaN)
 		{
 			if(x >= 0 && x <100 && y >= 0 && y < 100)
